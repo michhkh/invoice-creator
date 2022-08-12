@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Invoice Creator</title>
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+
+    <body>
+        <header class="hero">
+            <h1>Invoice creator</h1>
+            <p id="header-sentence">Thanks for choosing GoodCorp, LLC!</p>
+        </header>
+        
+        <div class="button-wrapper">
+            <button id="wash-btn">Wash car: $10</button>
+            <button id="lawn-btn">Mow Lawn: $20</button>
+            <button id="weeds-btn">Pull Weeds: $30</button>
+        </div>
+
+        <section>
+            <div class="columns">
+
+                <div class="col">
+                    <h3 class="h3-grey">TASK</h3>
+                    <h2 class="h2-styler"">Wash Car<span class="remove-styler" id="remove1">Remove</span></h2>
+                    <h2 class="h2-styler">Mow Lawn<span class="remove-styler" id="remove2">Remove</span></h2>
+                    <h2 class="h2-styler">Pull Weeds<span class="remove-styler" id="remove3">Remove</span></h2>
+                </div>
+
+                <div class="col">
+                    <h3 class="h3-grey">TOTAL</h3>
+                    <h2 class="h2-cash" id="total1">$0</h2>
+                    <h2 class="h2-cash" id="total2">$0</h2>
+                    <h2 class="h2-cash" id="total3">$0</h2>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div id="line"></div>
+            <div class="columns">
+                <div class="col">
+                    <h3 class="below-line">NOTES</h3>
+                    <p>We accept cash, credit card, or PayPal</p>
+                </div>
+
+                <div class="col">
+                    <h3 class="below-line-right">TOTAL AMOUNT</h3>
+                    <h2 class="amount-total" id="total-amount">$0</h2>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <button id="invoice-btn">Send invoice</button>
+        </footer>
+        <script src="./index.js"></script>
+    </body>
+</html>
